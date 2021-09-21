@@ -2,11 +2,14 @@ pipeline{
   
   agent any
   
+  tools{
+  maven "maven-3.8.2"
+  }
+  
   stages{
     
     stage("build"){
       steps{
-      git 'https://github.com/ttansang208/Helloworld/blob/dev/helloworld.java'
       echo 'building apllication'
       }
     }
