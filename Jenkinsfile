@@ -6,7 +6,7 @@ pipeline{
     
     stage("build"){
       steps{
-        
+      git 'https://github.com/ttansang208/Helloworld/blob/dev/helloworld.java'
       echo 'building apllication'
       }
     }
